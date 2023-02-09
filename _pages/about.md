@@ -24,4 +24,4 @@ On this site you can find out more about our
 * [projects](/projects/) 
 * [publications](/publications)
  
-and have a look at our [blog](/blog/) for news, and our [oppertunities](/oppertunities/) page for PhD and post doc openings.
+and have a look at our [blog](/blog/) for news, and our [openings](/openings/) page for PhD and post doc oppertunities.

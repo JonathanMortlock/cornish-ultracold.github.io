@@ -9,3 +9,4 @@ display_categories: [work, fun]
 horizontal: false
 ---
 
+We are always on the look out for talented and motivated students and post docs to join us in Durham. Please contact Simon directly to discuss.
