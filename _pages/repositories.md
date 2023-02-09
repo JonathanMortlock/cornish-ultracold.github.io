@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: page
 permalink: /repositories/
 title: repositories
@@ -27,4 +27,6 @@ nav_order: 3
     {% include repository/repo.html repository=repo %}
   {% endfor %}
 </div>
-{% endif %}
+{% endif %} -->
+
+<!-- Commented out for now -->
