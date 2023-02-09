@@ -1,80 +1,43 @@
 ---
 layout: page
 title: Tweezers
-description: a project with a background image
-img: assets/img/12.jpg
-importance: 1
-category: work
+description: Assembling molecules one atom at a time
+img: assets/img/tweezer_plan.png
+importance: 2
+years: [2022,2021,2020]
+
+# category: work
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/tweezer_plan.png" title="Tweezer Overview" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
+# Overview of research goals
 
+This experiment aims to explore new avenues of quantum science with ultracold polar molecules by forming single RbCs molecules in optical tweezers by associating individual Rb and Cs atoms.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
+Controllable arrays of ultracold molecules offer an exciting new platform for quantum experiments. For example, such arrays may be used for quantum simulation of problems ubiquitous to condensed matter physics such as lattice spin models. Alternatively, with precise single-site control, the molecules may be independently moved around and merged together in miniature particle colliders, allowing for the study of ultracold chemistry on a single particle level where quantum effects dominate.
+
+The aim of this experiment is to form such an interacting quantum system of ultracold RbCs molecules using individual Rb and Cs atoms confined in optical tweezers. An optical tweezer is a tightly focused beam of light with a typical beam waist of around 1 μm. The tightly focused beam enables light assisted collisions to reduce the trap occupancy to no more than one atom, allowing experimental manipulation on the single particle level.
+
+By trapping and cooling individual Rb and Cs atoms in optical tweezers, we will assemble single molecules by merging the tweezers confining Rb and Cs into a single trap containing both atoms. By preparing both atoms in the lowest motional state of the trap, the atom pair may be associated into a weakly bound molecular state by performing magnetoassociation, a technique performed by ramping an applied magnetic field over an interspecies Feshbach resonance. Subsequently, we will transfer this weakly-bound molecule into its rovibrational ground state using STIRAP (stimulated Raman adiabatic passage).
+
+Detection of the associated molecules will be achieved by dissociating the remaining molecules back into atoms by reversing the formation process described above. The remaining atoms may then be detected using fluorescence imaging.
+
+Using an acousto-optic deflector (AOD) to create multiple tweezers will enable the trapping of many Rb and Cs atoms which will allow us to scale up our experiment to create several ground state molecules, each in a different optical tweezer trap. These molecule-filled traps may then be rearranged to create the aforementioned controllable arrays, allowing a new realm of physics to be explored.
+
+The group has recently realised the trapping and imaging of single Rb and Cs atoms in individual tweezers. Currently, the group is working on the cooling of the individual Rb and Cs atoms trapped in optical tweezers, a necessary step before the atoms can be brought together and magnetoassociated into a weakly-bound molecule. This cooling will be implemented using Raman sideband cooling, a technique which allows the motional quantum number in the tweezer to be reduced by coherently driving transitions between different motional levels.
+
+## Recent Publications
+
+<div class="publications">
+
+{%- for y in page.years %}
+  <h2 class="year">{{y}}</h2>
+  {% bibliography -f Tweezer -q @*[year={{y}}]* %}
+{% endfor %}
+
 </div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}

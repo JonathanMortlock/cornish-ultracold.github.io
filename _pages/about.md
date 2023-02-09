@@ -14,8 +14,8 @@ profile:
   #   <p>Your City, State 12345</p>
 
 news: true  # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+selected_papers: False # includes a list of papers marked as "selected={true}"
+social: False  # includes social icons at the bottom of the page
 ---
 
 In our research group we study ultracold molecules formed by the association of ultracold atoms.

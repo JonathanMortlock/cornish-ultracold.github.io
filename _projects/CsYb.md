@@ -1,81 +1,24 @@
 ---
 layout: page
 title: CsYb
-description: a project that redirects to another website
-img: assets/img/7.jpg
-redirect: https://unsplash.com
-importance: 3
-category: work
+description: Magnetic Molecules
+img: assets/img/CsYb_webpage_slide.jpg
+importance: 2
 ---
+Research Goals
+The Cs-Yb project is unique in combining two atomic species with very different properties. This leads to a rich experimental platform, with many potential research directions. Our immediate research goals focus on two themes:
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+1. The study of quantum degenerate atomic gas mixtures. Here we exploit the range of Yb isotopes, both bosonic and fermionic, together with the ability to tune the Cs-Cs interactions using a Feshbach resonance to probe a variety of phenomena, including beyond mean-field physics through the formation of heteronuclear quantum droplets.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+2. The creation of ultracold CsYb molecules for quantum simulation. Such molecules have a doublet-sigma symmetry in the ground state, resulting in both a magnetic and an electric dipole moment. This leads to richer physics, particularly in optical lattices where CsYb molecules could be used to simulate quantum spin models.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+Current Work
+Our recent work has established the interspecies scattering lengths and precise predictions for the location of interspecies Feshbach resonances. We are currently measuring the interspecies Feshbach spectrum using fermionic 173Yb and are developing the hardware to spin-polarize the Yb gas. At the same time, we are installing a tunable optical trap operating around 460 nm. This trap will be used to enhance the overlap of the Cs-Yb gases and to also create species specific optical lattices. This capability will underpin our research on quantum droplets, as well as enhancing the prospects of magnetoassociation on an interspecies Feshbach resonance to form molecules.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+Team
+Our team consists of PI Simon Cornish, PDRAs Kali Wilson and Alex Guttridge, and PhD student Jack Segal. We also have several theory collaborators, including Simon Gardiner from the Department of Physics at Durham University, Jeremy Hutson and Matthew Frye from the Department of Chemistry at Durham University, and Tom Billam, Nick Parker, Nick Proukakis and I-Kang Liu from the School of Mathematics, Statistics and Physics at Newcastle University.
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
+Funding:
+"QSUM: Quantum Science with Ultracold Molecules" EPSRC EP/P01058X/1 (June 2017 - May 2022)
 
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
+"Dilute Quantum Fluids Beyond the Mean-Field" EPSRC EP/T015241/1 (April 2020 - March 2024)

@@ -1,80 +1,27 @@
 ---
 layout: page
 title: RbCs
-description: another without an image
-img:
-importance: 3
-category: fun
+description: Our original molecule lab
+img: assets/img/RbCs_slide.jpg
+importance: 2
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+Ultracold polar molecules offer a wide range of exciting research directions owing to their long-range anisotropic dipole-dipole interactions and rich internal structure. Proposed applications span the fields of ultracold chemistry, precision measurement, quantum simulation and quantum computation.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+In this experiment we produce ultracold RbCs molecules in the rovibrational and hyperfine ground state by associating ultracold Rb and Cs atoms using a two-step process. Starting from an atomic mixture with high phase-space density, we use magnetoassociation on a Feshbach resonance to produce weakly bound molecules. These molecules are then coherently transferred to a single deeply bound rovibrational state of the ground electronic state with near unity efficiency, using stimulated Raman adiabatic passage (STIRAP). The final temperature mirrors that of the original atomic gas, allowing us to exploit the established techniques of atomic cooling to bring molecules into the ultracold regime.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+## Coherent state control:
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
+We have demonstrated the use of microwave fields to coherently transfer ~100% of the population between the lower lying rotational and hyperfine states. We are building on this to develop a "toolbox" of techniques for coherent state control.
 
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
 
+Rabi oscillations between the two lowest rotationally excited states in RbCs. Each is driven as a single photon excitation.
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+## Molecular collisions:
+The lifetime of heteronuclear molecules such as RbCs is expected to be on the order of many seconds due to the lack of reactive and inelastic collisions. However, significant loss is seen after hundreds of microseconds, and this is an unexpected problem across all observed species of alkali-alkali hetronuclear molecules. The loss mechanism may be due to the proposed theory of "sticky collisions". We are invistigating into the loss processes and conditions, and working towards controlling the losses.
 
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
+## Funding:
+"Understanding Collisions of Ultracold Polar Molecules" EPSRC EP/P008275/1 (February 2017 - February 2020)
+
+"QSUM: Quantum Science with Ultracold Molecules" EPSRC EP/P01058X/1 (June 2017 - May 2022)
